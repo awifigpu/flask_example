@@ -30,9 +30,11 @@ def get_person(db_id, person_id):
     })
 
 
-@app.route('/<db_id>', methods=['POST'])
+@app.route('/<db_id>', methods=['POST', 'GET'])
 def create_person(db_id):
     print(request.json)
+    
+    return jsonify({'code':0})
 
 
 
