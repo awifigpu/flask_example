@@ -1,3 +1,6 @@
+<%
+a=x+2
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +8,43 @@
     <title>Title</title>
 </head>
 <body>
+<h1>xxxx</h1>
+${abc}
+
+%if x>1:
+    abc
+%else:
+    def
+%endif
+
+%for i in range(x):
+    ${i} qwer <br/>
+%if x>1:
+    abc
+%else:
+    def
+%endif
+
+
+%endfor
+
+
+
+<%def name="func1(x)">
+<br/>
+${x}---helloworld
+<br/>
+</%def>
+
+
+
+${func1('iop')}
+${func1('xxxxx')}
+
+
+
+
+${a}
 
 
 </body>
