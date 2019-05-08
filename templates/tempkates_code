@@ -1,0 +1,24 @@
+%if x>1:
+    abc
+%else:
+    def
+%endif
+
+
+<%
+a=x+2
+%>
+
+%for i in range(a):
+    ${i}
+%endfor
+
+
+<%def name="func1(x)">
+${x}---
+</%def>
+
+
+${func1(5)}
+${func1('qqqqqqqqqqqqq')}
+
